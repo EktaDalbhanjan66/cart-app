@@ -13,9 +13,9 @@ function Cart() {
     <div>
     <h2>Cart Products</h2>
 
-    {products.map((product) => {
+    {products.map((product,index) => {
       return (
-        <div key={product.id} className="cartCard">
+        <div key={index} className="cartCard">
           <img src={product.image} />
           <h5>{product.title}</h5>
           <h5>{product.price}</h5>
